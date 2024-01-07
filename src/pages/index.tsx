@@ -1,16 +1,20 @@
 "use client";
 
-import getPPPDataForCountry from "@/data/pppData";
+import Calculator from "@/components/Calculator";
+import Header from "@/components/Header";
+import countries from "@/data/countries.json"
+import getPPPDataForCountry from "@/data/api/pppData";
 
 export default function Home() {
   async function getData(){
     const data = await getPPPDataForCountry()
     console.log(data);
   }
-  getData()
+
   return (
-    <div>
-      hello world
-    </div>
+    <main className="container max-w-screen-lg text-gray-100 mx-auto px-10" >
+      <Header />
+      <Calculator/>
+    </main>
   )
 }
