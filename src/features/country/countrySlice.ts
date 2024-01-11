@@ -4,7 +4,7 @@ import type { RootState } from '@/redux/store'
 import type Country from '@/types/Country'
 
 // Define a type for the slice state
-interface CountriesState {
+type CountriesState = {
   sourceCountry: Country,
   targetCountry: Country
 }
