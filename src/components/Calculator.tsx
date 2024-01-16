@@ -2,7 +2,7 @@ import CountryInput from "./CountryInput";
 import {useAppDispatch} from "@/redux/hooks"
 import {setSourceCountry, setTargetCountry} from "@/features/country/countrySlice"
 
-export default function(){
+export default function Calculator(){
 
     const dispatch =  useAppDispatch()
 
