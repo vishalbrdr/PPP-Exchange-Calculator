@@ -8,7 +8,7 @@ type CountryInputProps = {
     setCountry: (option:Country)=>void
 }
 
-export default function({name, setCountry}:CountryInputProps){
+export default function CountryInput({name, setCountry}:CountryInputProps){
 
     const country = useAppSelector((state)=> state.countriesReducer[name])
 
